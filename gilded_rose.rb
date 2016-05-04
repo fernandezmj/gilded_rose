@@ -44,7 +44,7 @@ class GildedRose
     #   else
     #     item.quality -= 4
     #   end
-        
+            
     else
       if item.sell_in > 0
         item.quality -= 1
