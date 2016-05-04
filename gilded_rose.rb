@@ -38,12 +38,12 @@ class GildedRose
         item.quality += 1
       end 
 
-    # when /conjured/.match('conjured item')
-    #   if item.sell_in > 0
-    #     item.quality -= 2
-    #   else
-    #     item.quality -= 4
-    #   end
+    when /conjured/.match(item.name)
+      if item.sell_in > 0
+        item.quality -= 2
+      else
+        item.quality -= 4
+      end
             
     else
       if item.sell_in > 0
